@@ -2,7 +2,7 @@
 {
     public class PrototypeTest
     {
-        public static void Test(string[] args)
+        public static void Test()
         {
             Person p1 = new Person();
             p1.Age = 42;
