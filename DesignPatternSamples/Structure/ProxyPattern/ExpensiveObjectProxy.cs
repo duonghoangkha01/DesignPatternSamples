@@ -4,7 +4,7 @@
     {
         private readonly ExpensiveObject _realObject;
         private bool _dataRetrieved;
-        private string _cachedData;
+        private string _cachedData = string.Empty;
 
         public ExpensiveObjectProxy(ExpensiveObject realObject)
         {

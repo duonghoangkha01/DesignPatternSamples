@@ -4,8 +4,8 @@
     {
         public int Age;
         public DateTime BirthDate;
-        public string Name;
-        public IdInfo IdInfo;
+        public string Name = string.Empty;
+        public IdInfo IdInfo = new IdInfo(0);
 
         public Person ShallowCopy() => (Person)MemberwiseClone();
 
