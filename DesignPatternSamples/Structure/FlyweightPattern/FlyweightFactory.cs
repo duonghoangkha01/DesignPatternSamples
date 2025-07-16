@@ -47,7 +47,8 @@
             {
                 Console.WriteLine("FlyweightFactory: Reusing existing flyweight.");
             }
-            return _flyweights.FirstOrDefault(t => t.Item2 == key).Item1;
+            return _flyweights.FirstOrDefault(t => t.Item2 == key)?.Item1 ?? 
+                   throw new InvalidOperationException($"Flyweight with key '{key}' not found");
         }
 
         public void ListFlyweights()
